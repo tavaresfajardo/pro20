@@ -1,2 +1,2 @@
 # pro20
-fazer tp2 com 20 
+Trabalho no âmbito da cadeira de Engenharia de Dados e Conhecimento
