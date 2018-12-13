@@ -21,5 +21,6 @@ from guns import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+    path('weapontype/',views.weapontype, name='weapontype')
     
 ]

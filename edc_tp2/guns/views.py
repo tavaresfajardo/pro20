@@ -11,3 +11,13 @@ def home(request):
     }
     return render(request, 'index.html', tparams)
 
+
+def weapontype(request):
+    rg = request.GET
+    print('rg',rg)
+    type = rg['type']
+    print('type',type)
+    tparams = {
+        
+    }
+    return render(request, 'weapontype.html', tparams)
