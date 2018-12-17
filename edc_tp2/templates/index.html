@@ -140,8 +140,8 @@ label {
 					<ul>
 						<li class="active"><a href="index.html" data-nav-section="home">Home</a></li>
 						<li><a href="#" data-nav-section="services">Services</a></li>
-						<li><a href="#" data-nav-section="portfolio">Portfolio</a></li>
-						<li><a href="#" data-nav-section="about">About us</a></li>
+						<li><a href="#" data-nav-section="portfolio">Top Guns</a></li>
+						<li><a href="#" data-nav-section="about">Gun Stock</a></li>
 						<button id="bomdia" onclick="myFunction()">Click me</button>
 						<input type="text" id="demo">
 					</ul>
@@ -283,60 +283,26 @@ label {
 			<div class="ubea-container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center ubea-heading">
-						<h2>Portfolio</h2>
+						<h2>Top Guns</h2>
 						<p>Here you can find the guns.</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<a href="static/images/img_2.jpg" class="ubea-card-item image-popup" title="Project name here.">
-							<figure>
-								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="static/images/img_2.jpg" alt="Image" class="img-responsive">
-							</figure>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="static/images/img_3.jpg" class="ubea-card-item image-popup" title="Project name here.">
-							<figure>
-								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="static/images/img_3.jpg" alt="Image" class="img-responsive">
-							</figure>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="static/images/img_4.webp" class="ubea-card-item image-popup" title="Project name here.">
-							<figure>
-								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="static/images/img_4.webp" alt="Image" class="img-responsive">
-							</figure>
-						</a>
-					</div>
 
-					<div class="col-md-4">
-						<a href="static/images/img_5.png" class="ubea-card-item image-popup" title="Project name here.">
-							<figure>
-								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="static/images/img_5.png" alt="Image" class="img-responsive">
-							</figure>
-						</a>
+				{% for gunsublist in gunlist %}
+					<div class="row">
+					{% for gun in gunsublist %}
+						<div class="col-md-4">
+							<a href="{{gun.image}}" class="ubea-card-item image-popup" title="{{gun.name}}: {{gun.count}} in stock">
+								<figure>
+									<div class="overlay"><i class="ti-plus"></i></div>
+									<img src="{{gun.image}}" alt="Image" class="img-responsive">
+								</figure>
+								{{gun.name}}
+							</a>
+						</div>
+					{% endfor %}
 					</div>
-					<div class="col-md-4">
-						<a href="static/images/img_5.jpg" class="ubea-card-item image-popup" title="Project name here.">
-							<figure>
-								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="static/images/img_5.jpg" alt="Image" class="img-responsive">
-							</figure>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="static/images/img_6.jpg" class="ubea-card-item image-popup" title="Project name here.">
-							<figure>
-								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="static/images/img_6.jpg" alt="Image" class="img-responsive">
-							</figure>
-						</a>
-					</div>
+				{% endfor %}
 				</div>
 			</div>
 		</div>
@@ -346,7 +312,7 @@ label {
 		<div class="ubea-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center ubea-heading">
-					<h2>About us</h2>
+					<h2>Gun stock</h2>
 					<p>We are a group of students developing a work for the curricular unit "Engenharia de Dados e Conhecimento".
 						We explored a bundle of tools, such as Python/Django, RDF in diferent formats,
 						 the Triplestore GraphDB, SPARQL and RDFa.</p>
