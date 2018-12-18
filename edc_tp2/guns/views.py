@@ -53,7 +53,8 @@ def home(request):
     print(types_of_weapons)
 
     tparams = {
-        'gunlist': gunlist
+        'gunlist': gunlist,
+        'types': types_of_weapons
     }
     return render(request, 'index.html', tparams)
 
