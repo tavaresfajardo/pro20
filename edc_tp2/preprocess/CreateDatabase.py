@@ -10,13 +10,8 @@ newDB = []
 newDB +=  [(wikiurl_prop+'P2561>', wikiurl_prop+'P2561>' , '"name"')]
 newDB +=  [(wikiurl_prop+'P1114>', wikiurl_prop+'P2561>' , '"count"')]
 newDB +=  [(wikiurl_prop+'P18>', wikiurl_prop+'P2561>' , '"image"')]
-queue = [name]
-csv = []
-d = {}
-while queue:
-item, *queue = queue
+newDB +=  [(wikiurl_prop+'P2284>', wikiurl_prop+'P2561>' , '"price"')]
 
-queue = []
 query =("SELECT ?name ?nameLabel ?name2 ?name2Label ?image WHERE {"
        "?name wdt:P31 wd:Q12796."
        "?name2 wdt:P279* ?name."
@@ -33,10 +28,11 @@ R = []
 #print('data',data)
 R=[{   'name': '<'+v['name2']['value']+'>' , 'nameLabel': '"'+v['name2Label']['value']+'"' , 'image' : '"'+v['image']['value']+'"' }for v in data['results']['bindings'] if v['name2Label']['value'] not in v['name2']['value'] ]
 
-newR = [(i,random.randint(1,10)) for i in random.sample(R, 60)]
+newR = [(i,random.randint(1,20),random.randint(800,2000)) for i in random.sample(R, 50)]
 for i in newR:
        newDB +=  [(i[0]['name'],wikiurl_prop+'P2561>', i[0]['nameLabel'])]
        newDB +=  [(i[0]['name'],wikiurl_prop+'P1114>',i[1])]
+       newDB +=  [(i[0]['name'],wikiurl_prop+'P2284>',i[2])]
        newDB +=  [(i[0]['name'],wikiurl_prop+'P18>',i[0]['image'])]
        print([(i[0]['name'],i[1]) for i in newR])
 

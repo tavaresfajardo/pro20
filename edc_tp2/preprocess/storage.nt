@@ -1,183 +1,204 @@
 <http://www.wikidata.org/wiki/Property/P2561> <http://www.wikidata.org/wiki/Property/P2561> "name" .
 <http://www.wikidata.org/wiki/Property/P1114> <http://www.wikidata.org/wiki/Property/P2561> "count" .
 <http://www.wikidata.org/wiki/Property/P18> <http://www.wikidata.org/wiki/Property/P2561> "image" .
-<http://www.wikidata.org/entity/Q4386272> <http://www.wikidata.org/wiki/Property/P2561> "Udar revolver" .
-<http://www.wikidata.org/entity/Q4386272> <http://www.wikidata.org/wiki/Property/P1114> 7 .
-<http://www.wikidata.org/entity/Q4386272> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Tula%20State%20Museum%20of%20Weapons%20%2879-67%29.jpg" .
-<http://www.wikidata.org/entity/Q151877> <http://www.wikidata.org/wiki/Property/P2561> "StG 44" .
-<http://www.wikidata.org/entity/Q151877> <http://www.wikidata.org/wiki/Property/P1114> 9 .
-<http://www.wikidata.org/entity/Q151877> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/MP44%20-%20Tyskland%20-%208x33mm%20Kurz%20-%20Arm%C3%A9museum.jpg" .
-<http://www.wikidata.org/entity/Q389758> <http://www.wikidata.org/wiki/Property/P2561> "TZ-45" .
-<http://www.wikidata.org/entity/Q389758> <http://www.wikidata.org/wiki/Property/P1114> 3 .
-<http://www.wikidata.org/entity/Q389758> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/TZ-45.jpg" .
-<http://www.wikidata.org/entity/Q1242204> <http://www.wikidata.org/wiki/Property/P2561> "Heckler & Koch P2000" .
-<http://www.wikidata.org/entity/Q1242204> <http://www.wikidata.org/wiki/Property/P1114> 8 .
-<http://www.wikidata.org/entity/Q1242204> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Hkp2000.jpg" .
-<http://www.wikidata.org/entity/Q15991020> <http://www.wikidata.org/wiki/Property/P2561> "Pindad G2" .
-<http://www.wikidata.org/entity/Q15991020> <http://www.wikidata.org/wiki/Property/P1114> 8 .
-<http://www.wikidata.org/entity/Q15991020> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/G2-COMBAT.jpg" .
-<http://www.wikidata.org/entity/Q3272535> <http://www.wikidata.org/wiki/Property/P2561> "Astra M4000" .
-<http://www.wikidata.org/entity/Q3272535> <http://www.wikidata.org/wiki/Property/P1114> 4 .
-<http://www.wikidata.org/entity/Q3272535> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/LLAMA%20III-A%20%2821%29.JPG" .
-<http://www.wikidata.org/entity/Q505226> <http://www.wikidata.org/wiki/Property/P2561> "Barrett M82" .
-<http://www.wikidata.org/entity/Q505226> <http://www.wikidata.org/wiki/Property/P1114> 7 .
-<http://www.wikidata.org/entity/Q505226> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/M107%201.jpg" .
-<http://www.wikidata.org/entity/Q1543401> <http://www.wikidata.org/wiki/Property/P2561> "Fusil Gras mle 1874" .
-<http://www.wikidata.org/entity/Q1543401> <http://www.wikidata.org/wiki/Property/P1114> 9 .
-<http://www.wikidata.org/entity/Q1543401> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Fusil%20Gras%20M80%201874.jpg" .
-<http://www.wikidata.org/entity/Q1776056> <http://www.wikidata.org/wiki/Property/P2561> "Smith & Wesson Model 36" .
-<http://www.wikidata.org/entity/Q1776056> <http://www.wikidata.org/wiki/Property/P1114> 4 .
-<http://www.wikidata.org/entity/Q1776056> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Model%2036%2038%20calibre%20Smith%20%26%20Wesson%20which%20was%20issued%20to%20women%20in%20the%20NSW%20Police.jpg" .
-<http://www.wikidata.org/entity/Q7445250> <http://www.wikidata.org/wiki/Property/P2561> "Sedgley OSS .38" .
-<http://www.wikidata.org/entity/Q7445250> <http://www.wikidata.org/wiki/Property/P1114> 3 .
-<http://www.wikidata.org/entity/Q7445250> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Haight%20Fist%20Gun%20US%20Patent.jpg" .
-<http://www.wikidata.org/entity/Q1389350> <http://www.wikidata.org/wiki/Property/P2561> "FN CAL" .
-<http://www.wikidata.org/entity/Q1389350> <http://www.wikidata.org/wiki/Property/P1114> 5 .
-<http://www.wikidata.org/entity/Q1389350> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/National%20Firearms%20Museum%20rifle.jpg" .
-<http://www.wikidata.org/entity/Q860318> <http://www.wikidata.org/wiki/Property/P2561> "Charlton Automatic Rifle" .
-<http://www.wikidata.org/entity/Q860318> <http://www.wikidata.org/wiki/Property/P1114> 1 .
-<http://www.wikidata.org/entity/Q860318> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Charlton%20Automatic%20Rifle.jpg" .
-<http://www.wikidata.org/entity/Q837872> <http://www.wikidata.org/wiki/Property/P2561> "Smith & Wesson Sigma" .
-<http://www.wikidata.org/entity/Q837872> <http://www.wikidata.org/wiki/Property/P1114> 5 .
-<http://www.wikidata.org/entity/Q837872> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Smith%20and%20Wesson%20Sigma%20SW9VE.JPG" .
-<http://www.wikidata.org/entity/Q7311882> <http://www.wikidata.org/wiki/Property/P2561> "Remington Rider Single Shot Pistol" .
-<http://www.wikidata.org/entity/Q7311882> <http://www.wikidata.org/wiki/Property/P1114> 6 .
-<http://www.wikidata.org/entity/Q7311882> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Remington-Rider%20%28DavidFagan%29.jpg" .
-<http://www.wikidata.org/entity/Q2005736> <http://www.wikidata.org/wiki/Property/P2561> "SIG Sauer P225" .
-<http://www.wikidata.org/entity/Q2005736> <http://www.wikidata.org/wiki/Property/P1114> 5 .
-<http://www.wikidata.org/entity/Q2005736> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/SIG%20225.jpg" .
-<http://www.wikidata.org/entity/Q190570> <http://www.wikidata.org/wiki/Property/P2561> "sniper rifle" .
-<http://www.wikidata.org/entity/Q190570> <http://www.wikidata.org/wiki/Property/P1114> 7 .
-<http://www.wikidata.org/entity/Q190570> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/M-40A3.jpg" .
-<http://www.wikidata.org/entity/Q172172> <http://www.wikidata.org/wiki/Property/P2561> "Glock 17" .
-<http://www.wikidata.org/entity/Q172172> <http://www.wikidata.org/wiki/Property/P1114> 10 .
-<http://www.wikidata.org/entity/Q172172> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Glock%2017%20%286825676904%29.jpg" .
-<http://www.wikidata.org/entity/Q1675292> <http://www.wikidata.org/wiki/Property/P2561> "Ithaca 37" .
-<http://www.wikidata.org/entity/Q1675292> <http://www.wikidata.org/wiki/Property/P1114> 4 .
-<http://www.wikidata.org/entity/Q1675292> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Ithaca%2037.jpg" .
-<http://www.wikidata.org/entity/Q4043462> <http://www.wikidata.org/wiki/Property/P2561> "MP-412 REX" .
-<http://www.wikidata.org/entity/Q4043462> <http://www.wikidata.org/wiki/Property/P1114> 3 .
-<http://www.wikidata.org/entity/Q4043462> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/MP%20412.jpg" .
-<http://www.wikidata.org/entity/Q7378526> <http://www.wikidata.org/wiki/Property/P2561> "Ruger 10/22" .
-<http://www.wikidata.org/entity/Q7378526> <http://www.wikidata.org/wiki/Property/P1114> 10 .
-<http://www.wikidata.org/entity/Q7378526> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Ruger-1022.jpg" .
-<http://www.wikidata.org/entity/Q1066761> <http://www.wikidata.org/wiki/Property/P2561> "PP-90" .
-<http://www.wikidata.org/entity/Q1066761> <http://www.wikidata.org/wiki/Property/P1114> 10 .
-<http://www.wikidata.org/entity/Q1066761> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%9F-90%D0%9C%20-%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%85-2009%2001.jpg" .
-<http://www.wikidata.org/entity/Q1251412> <http://www.wikidata.org/wiki/Property/P2561> "Colt Double Eagle" .
-<http://www.wikidata.org/entity/Q1251412> <http://www.wikidata.org/wiki/Property/P1114> 8 .
-<http://www.wikidata.org/entity/Q1251412> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/ColtDoubleEagle.jpg" .
-<http://www.wikidata.org/entity/Q11735457> <http://www.wikidata.org/wiki/Property/P2561> "Wänzl rifle" .
-<http://www.wikidata.org/entity/Q11735457> <http://www.wikidata.org/wiki/Property/P1114> 3 .
-<http://www.wikidata.org/entity/Q11735457> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Wanzl%20rifle.jpg" .
-<http://www.wikidata.org/entity/Q835135> <http://www.wikidata.org/wiki/Property/P2561> "Škorpion vz. 61" .
-<http://www.wikidata.org/entity/Q835135> <http://www.wikidata.org/wiki/Property/P1114> 8 .
-<http://www.wikidata.org/entity/Q835135> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Submachine%20gun%20vz61.jpg" .
-<http://www.wikidata.org/entity/Q7427181> <http://www.wikidata.org/wiki/Property/P2561> "Sauer 200 STR" .
-<http://www.wikidata.org/entity/Q7427181> <http://www.wikidata.org/wiki/Property/P1114> 2 .
-<http://www.wikidata.org/entity/Q7427181> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/SIG%20Sauer%20200%20STR.jpg" .
-<http://www.wikidata.org/entity/Q2844116> <http://www.wikidata.org/wiki/Property/P2561> "Kevin ZP98" .
-<http://www.wikidata.org/entity/Q2844116> <http://www.wikidata.org/wiki/Property/P1114> 6 .
-<http://www.wikidata.org/entity/Q2844116> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Pistole%20Kevin.jpg" .
-<http://www.wikidata.org/entity/Q2583830> <http://www.wikidata.org/wiki/Property/P2561> "Kbs wz. 1996 Beryl" .
-<http://www.wikidata.org/entity/Q2583830> <http://www.wikidata.org/wiki/Property/P1114> 9 .
-<http://www.wikidata.org/entity/Q2583830> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Rifle%20wz.1996%20Beryl.jpg" .
-<http://www.wikidata.org/entity/Q1516834> <http://www.wikidata.org/wiki/Property/P2561> "Smith & Wesson Model 29" .
-<http://www.wikidata.org/entity/Q1516834> <http://www.wikidata.org/wiki/Property/P1114> 8 .
-<http://www.wikidata.org/entity/Q1516834> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/SW%20Model%20629.jpg" .
-<http://www.wikidata.org/entity/Q12063836> <http://www.wikidata.org/wiki/Property/P2561> "New Haven 600" .
-<http://www.wikidata.org/entity/Q12063836> <http://www.wikidata.org/wiki/Property/P1114> 5 .
-<http://www.wikidata.org/entity/Q12063836> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Mossberg%20500AL.jpg" .
-<http://www.wikidata.org/entity/Q797509> <http://www.wikidata.org/wiki/Property/P2561> "QCW-05" .
-<http://www.wikidata.org/entity/Q797509> <http://www.wikidata.org/wiki/Property/P1114> 8 .
-<http://www.wikidata.org/entity/Q797509> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/QCQ05.jpg" .
-<http://www.wikidata.org/entity/Q155644> <http://www.wikidata.org/wiki/Property/P2561> "Uzi" .
-<http://www.wikidata.org/entity/Q155644> <http://www.wikidata.org/wiki/Property/P1114> 2 .
-<http://www.wikidata.org/entity/Q155644> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Uzi%201.jpg" .
-<http://www.wikidata.org/entity/Q719843> <http://www.wikidata.org/wiki/Property/P2561> "Ruger MK II" .
-<http://www.wikidata.org/entity/Q719843> <http://www.wikidata.org/wiki/Property/P1114> 4 .
-<http://www.wikidata.org/entity/Q719843> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Ruger%20MK%20II.jpg" .
-<http://www.wikidata.org/entity/Q10846740> <http://www.wikidata.org/wiki/Property/P2561> "CZ 110" .
-<http://www.wikidata.org/entity/Q10846740> <http://www.wikidata.org/wiki/Property/P1114> 6 .
-<http://www.wikidata.org/entity/Q10846740> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/CZ110.jpg" .
-<http://www.wikidata.org/entity/Q30640152> <http://www.wikidata.org/wiki/Property/P2561> "Pistolet modèle 1733" .
-<http://www.wikidata.org/entity/Q30640152> <http://www.wikidata.org/wiki/Property/P1114> 8 .
-<http://www.wikidata.org/entity/Q30640152> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Flintlock%20pistol%20model%201733-P4221429-white.jpg" .
+<http://www.wikidata.org/wiki/Property/P2284> <http://www.wikidata.org/wiki/Property/P2561> "price" .
+<http://www.wikidata.org/entity/Q166313> <http://www.wikidata.org/wiki/Property/P2561> "Gewehr 98" .
+<http://www.wikidata.org/entity/Q166313> <http://www.wikidata.org/wiki/Property/P1114> 10 .
+<http://www.wikidata.org/entity/Q166313> <http://www.wikidata.org/wiki/Property/P2284> 1331 .
+<http://www.wikidata.org/entity/Q166313> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Mauser%20m98.jpg" .
+<http://www.wikidata.org/entity/Q5575563> <http://www.wikidata.org/wiki/Property/P2561> "Goblin submachine gun" .
+<http://www.wikidata.org/entity/Q5575563> <http://www.wikidata.org/wiki/Property/P1114> 15 .
+<http://www.wikidata.org/entity/Q5575563> <http://www.wikidata.org/wiki/Property/P2284> 1406 .
+<http://www.wikidata.org/entity/Q5575563> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Goblin%20submachine%20gun.jpg" .
+<http://www.wikidata.org/entity/Q3367811> <http://www.wikidata.org/wiki/Property/P2561> "Colt M1902" .
+<http://www.wikidata.org/entity/Q3367811> <http://www.wikidata.org/wiki/Property/P1114> 8 .
+<http://www.wikidata.org/entity/Q3367811> <http://www.wikidata.org/wiki/Property/P2284> 1917 .
+<http://www.wikidata.org/entity/Q3367811> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Colt%20Model%2002%20Military.JPG" .
+<http://www.wikidata.org/entity/Q3381886> <http://www.wikidata.org/wiki/Property/P2561> "DoubleTap derringer" .
+<http://www.wikidata.org/entity/Q3381886> <http://www.wikidata.org/wiki/Property/P1114> 6 .
+<http://www.wikidata.org/entity/Q3381886> <http://www.wikidata.org/wiki/Property/P2284> 878 .
+<http://www.wikidata.org/entity/Q3381886> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Heizer-DoubleTap.jpg" .
+<http://www.wikidata.org/entity/Q1890789> <http://www.wikidata.org/wiki/Property/P2561> "Mannlicher-Schönauer" .
+<http://www.wikidata.org/entity/Q1890789> <http://www.wikidata.org/wiki/Property/P1114> 11 .
+<http://www.wikidata.org/entity/Q1890789> <http://www.wikidata.org/wiki/Property/P2284> 1446 .
+<http://www.wikidata.org/entity/Q1890789> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Mannlicher%20schoennauer%201903-14.jpg" .
+<http://www.wikidata.org/entity/Q1675269> <http://www.wikidata.org/wiki/Property/P2561> "Ithaca Auto & Burglar" .
+<http://www.wikidata.org/entity/Q1675269> <http://www.wikidata.org/wiki/Property/P1114> 19 .
+<http://www.wikidata.org/entity/Q1675269> <http://www.wikidata.org/wiki/Property/P2284> 1452 .
+<http://www.wikidata.org/entity/Q1675269> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Ithaca-auto-burglar.jpg" .
+<http://www.wikidata.org/entity/Q2705439> <http://www.wikidata.org/wiki/Property/P2561> "OTs-02 Kiparis" .
+<http://www.wikidata.org/entity/Q2705439> <http://www.wikidata.org/wiki/Property/P1114> 17 .
+<http://www.wikidata.org/entity/Q2705439> <http://www.wikidata.org/wiki/Property/P2284> 923 .
+<http://www.wikidata.org/entity/Q2705439> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B8%D1%81%D1%82%D0%BE%D0%BB%D0%B5%D1%82-%D0%BF%D1%83%D0%BB%D0%B5%D0%BC%D0%B5%D1%82%20%D0%9E%D0%A6-02%20%D0%9A%D0%B8%D0%BF%D0%B0%D1%80%D0%B8%D1%81%20-%20%D0%A2%D1%83%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%20%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%9C%D1%83%D0%B7%D0%B5%D1%8F%20%D0%9E%D1%80%D1%83%D0%B6%D0%B8%D1%8F%202008%2001.jpg" .
+<http://www.wikidata.org/entity/Q8197313> <http://www.wikidata.org/wiki/Property/P2561> "Vahan" .
+<http://www.wikidata.org/entity/Q8197313> <http://www.wikidata.org/wiki/Property/P1114> 4 .
+<http://www.wikidata.org/entity/Q8197313> <http://www.wikidata.org/wiki/Property/P2284> 1863 .
+<http://www.wikidata.org/entity/Q8197313> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Vahan2.JPG" .
+<http://www.wikidata.org/entity/Q675325> <http://www.wikidata.org/wiki/Property/P2561> "SIG P210" .
+<http://www.wikidata.org/entity/Q675325> <http://www.wikidata.org/wiki/Property/P1114> 6 .
+<http://www.wikidata.org/entity/Q675325> <http://www.wikidata.org/wiki/Property/P2284> 1721 .
+<http://www.wikidata.org/entity/Q675325> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/SIG%20210-2%20%286825677804%29.jpg" .
+<http://www.wikidata.org/entity/Q593610> <http://www.wikidata.org/wiki/Property/P2561> "StG 45(M)" .
+<http://www.wikidata.org/entity/Q593610> <http://www.wikidata.org/wiki/Property/P1114> 17 .
+<http://www.wikidata.org/entity/Q593610> <http://www.wikidata.org/wiki/Property/P2284> 1378 .
+<http://www.wikidata.org/entity/Q593610> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%20Sturmgewehr%2045%20%28dark1%29.jpg" .
+<http://www.wikidata.org/entity/Q740503> <http://www.wikidata.org/wiki/Property/P2561> "Glock 19" .
+<http://www.wikidata.org/entity/Q740503> <http://www.wikidata.org/wiki/Property/P1114> 3 .
+<http://www.wikidata.org/entity/Q740503> <http://www.wikidata.org/wiki/Property/P2284> 1336 .
+<http://www.wikidata.org/entity/Q740503> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Glock19-5.jpg" .
+<http://www.wikidata.org/entity/Q7051306> <http://www.wikidata.org/wiki/Property/P2561> "Norinco HP9-1" .
+<http://www.wikidata.org/entity/Q7051306> <http://www.wikidata.org/wiki/Property/P1114> 18 .
+<http://www.wikidata.org/entity/Q7051306> <http://www.wikidata.org/wiki/Property/P2284> 1242 .
+<http://www.wikidata.org/entity/Q7051306> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Hp-91.png" .
+<http://www.wikidata.org/entity/Q5426798> <http://www.wikidata.org/wiki/Property/P2561> "FN FNS" .
+<http://www.wikidata.org/entity/Q5426798> <http://www.wikidata.org/wiki/Property/P1114> 18 .
+<http://www.wikidata.org/entity/Q5426798> <http://www.wikidata.org/wiki/Property/P2284> 1969 .
+<http://www.wikidata.org/entity/Q5426798> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Browning%20High-Power%209mm%20IMG%201526.jpg" .
+<http://www.wikidata.org/entity/Q7121035> <http://www.wikidata.org/wiki/Property/P2561> "PTR 91F" .
+<http://www.wikidata.org/entity/Q7121035> <http://www.wikidata.org/wiki/Property/P1114> 8 .
+<http://www.wikidata.org/entity/Q7121035> <http://www.wikidata.org/wiki/Property/P2284> 1628 .
+<http://www.wikidata.org/entity/Q7121035> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/PTR%2091K%20Carbine.jpg" .
+<http://www.wikidata.org/entity/Q1038494> <http://www.wikidata.org/wiki/Property/P2561> "Carl Gustav M/45" .
+<http://www.wikidata.org/entity/Q1038494> <http://www.wikidata.org/wiki/Property/P1114> 16 .
+<http://www.wikidata.org/entity/Q1038494> <http://www.wikidata.org/wiki/Property/P2284> 1253 .
+<http://www.wikidata.org/entity/Q1038494> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Carl%20Gustav%20M45-b.jpg" .
+<http://www.wikidata.org/entity/Q7581008> <http://www.wikidata.org/wiki/Property/P2561> "Springfield Model 1892-99" .
+<http://www.wikidata.org/entity/Q7581008> <http://www.wikidata.org/wiki/Property/P1114> 13 .
+<http://www.wikidata.org/entity/Q7581008> <http://www.wikidata.org/wiki/Property/P2284> 1895 .
+<http://www.wikidata.org/entity/Q7581008> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Springfield%20Krag%20Rifle.JPG" .
+<http://www.wikidata.org/entity/Q1185357> <http://www.wikidata.org/wiki/Property/P2561> "RK 95 TP" .
+<http://www.wikidata.org/entity/Q1185357> <http://www.wikidata.org/wiki/Property/P1114> 16 .
+<http://www.wikidata.org/entity/Q1185357> <http://www.wikidata.org/wiki/Property/P2284> 1635 .
+<http://www.wikidata.org/entity/Q1185357> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Maneesi%20univormun%C3%A4yttely%2034%20sotilas%201990-luku.JPG" .
+<http://www.wikidata.org/entity/Q1563890> <http://www.wikidata.org/wiki/Property/P2561> "Heckler & Koch P30" .
+<http://www.wikidata.org/entity/Q1563890> <http://www.wikidata.org/wiki/Property/P1114> 2 .
+<http://www.wikidata.org/entity/Q1563890> <http://www.wikidata.org/wiki/Property/P2284> 804 .
+<http://www.wikidata.org/entity/Q1563890> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Koalorka%20H%26K%20P30L.jpg" .
+<http://www.wikidata.org/entity/Q1192651> <http://www.wikidata.org/wiki/Property/P2561> "SAR 21" .
+<http://www.wikidata.org/entity/Q1192651> <http://www.wikidata.org/wiki/Property/P1114> 10 .
+<http://www.wikidata.org/entity/Q1192651> <http://www.wikidata.org/wiki/Property/P2284> 1150 .
+<http://www.wikidata.org/entity/Q1192651> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/SAR%2021%20RCF%20module.jpg" .
+<http://www.wikidata.org/entity/Q142928> <http://www.wikidata.org/wiki/Property/P2561> "OC-14-4A" .
+<http://www.wikidata.org/entity/Q142928> <http://www.wikidata.org/wiki/Property/P1114> 4 .
+<http://www.wikidata.org/entity/Q142928> <http://www.wikidata.org/wiki/Property/P2284> 1850 .
+<http://www.wikidata.org/entity/Q142928> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/GrozaOC14.svg" .
+<http://www.wikidata.org/entity/Q2897026> <http://www.wikidata.org/wiki/Property/P2561> "Beretta model 1915" .
+<http://www.wikidata.org/entity/Q2897026> <http://www.wikidata.org/wiki/Property/P1114> 11 .
+<http://www.wikidata.org/entity/Q2897026> <http://www.wikidata.org/wiki/Property/P2284> 818 .
+<http://www.wikidata.org/entity/Q2897026> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Beretta%20Model%201923.jpg" .
+<http://www.wikidata.org/entity/Q740503> <http://www.wikidata.org/wiki/Property/P2561> "Glock 19" .
+<http://www.wikidata.org/entity/Q740503> <http://www.wikidata.org/wiki/Property/P1114> 10 .
+<http://www.wikidata.org/entity/Q740503> <http://www.wikidata.org/wiki/Property/P2284> 1333 .
+<http://www.wikidata.org/entity/Q740503> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Glock19-5.jpg" .
+<http://www.wikidata.org/entity/Q2784210> <http://www.wikidata.org/wiki/Property/P2561> "Orita M1941" .
+<http://www.wikidata.org/entity/Q2784210> <http://www.wikidata.org/wiki/Property/P1114> 8 .
+<http://www.wikidata.org/entity/Q2784210> <http://www.wikidata.org/wiki/Property/P2284> 1959 .
+<http://www.wikidata.org/entity/Q2784210> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Orita.jpg" .
+<http://www.wikidata.org/entity/Q2613343> <http://www.wikidata.org/wiki/Property/P2561> "FN FNP" .
+<http://www.wikidata.org/entity/Q2613343> <http://www.wikidata.org/wiki/Property/P1114> 10 .
+<http://www.wikidata.org/entity/Q2613343> <http://www.wikidata.org/wiki/Property/P2284> 1940 .
+<http://www.wikidata.org/entity/Q2613343> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/11290600091.jpg" .
 <http://www.wikidata.org/entity/Q6715363> <http://www.wikidata.org/wiki/Property/P2561> "MEMS M-52/60" .
-<http://www.wikidata.org/entity/Q6715363> <http://www.wikidata.org/wiki/Property/P1114> 10 .
+<http://www.wikidata.org/entity/Q6715363> <http://www.wikidata.org/wiki/Property/P1114> 7 .
+<http://www.wikidata.org/entity/Q6715363> <http://www.wikidata.org/wiki/Property/P2284> 1039 .
 <http://www.wikidata.org/entity/Q6715363> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Armamento%20-%20Museo%20de%20Armas%20de%20la%20Naci%C3%B3n%2046.JPG" .
-<http://www.wikidata.org/entity/Q1430251> <http://www.wikidata.org/wiki/Property/P2561> "hand cannon" .
-<http://www.wikidata.org/entity/Q1430251> <http://www.wikidata.org/wiki/Property/P1114> 9 .
-<http://www.wikidata.org/entity/Q1430251> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Gun%20Sweden%20Morko.jpg" .
-<http://www.wikidata.org/entity/Q1738129> <http://www.wikidata.org/wiki/Property/P2561> "Kel-Tec SUB-2000" .
-<http://www.wikidata.org/entity/Q1738129> <http://www.wikidata.org/wiki/Property/P1114> 1 .
-<http://www.wikidata.org/entity/Q1738129> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Kel-Tec%20SUB-2000.jpg" .
-<http://www.wikidata.org/entity/Q2294575> <http://www.wikidata.org/wiki/Property/P2561> "Beretta Px4 Storm" .
-<http://www.wikidata.org/entity/Q2294575> <http://www.wikidata.org/wiki/Property/P1114> 3 .
-<http://www.wikidata.org/entity/Q2294575> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/PX4Storm.jpg" .
-<http://www.wikidata.org/entity/Q1808862> <http://www.wikidata.org/wiki/Property/P2561> "Modèle 1892 revolver" .
-<http://www.wikidata.org/entity/Q1808862> <http://www.wikidata.org/wiki/Property/P1114> 4 .
-<http://www.wikidata.org/entity/Q1808862> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/France%20service%20revolver%2C%20Model%201892%2C%208%20mm%20-%20National%20World%20War%20I%20Museum%20-%20Kansas%20City%2C%20MO%20-%20DSC07474-white.jpg" .
-<http://www.wikidata.org/entity/Q298514> <http://www.wikidata.org/wiki/Property/P2561> "AS Val" .
-<http://www.wikidata.org/entity/Q298514> <http://www.wikidata.org/wiki/Property/P1114> 9 .
-<http://www.wikidata.org/entity/Q298514> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/AS%20Val%20%28541-03%29.jpg" .
-<http://www.wikidata.org/entity/Q947025> <http://www.wikidata.org/wiki/Property/P2561> "Walther PPQ" .
-<http://www.wikidata.org/entity/Q947025> <http://www.wikidata.org/wiki/Property/P1114> 10 .
-<http://www.wikidata.org/entity/Q947025> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Walther%20PPQ.jpg" .
-<http://www.wikidata.org/entity/Q2497614> <http://www.wikidata.org/wiki/Property/P2561> "Fort-12" .
-<http://www.wikidata.org/entity/Q2497614> <http://www.wikidata.org/wiki/Property/P1114> 8 .
-<http://www.wikidata.org/entity/Q2497614> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Pistolet%20fort%2012%20travmatik%20com%201%20by-sa.jpg" .
-<http://www.wikidata.org/entity/Q1629993> <http://www.wikidata.org/wiki/Property/P2561> "SIG Sauer P239" .
-<http://www.wikidata.org/entity/Q1629993> <http://www.wikidata.org/wiki/Property/P1114> 4 .
-<http://www.wikidata.org/entity/Q1629993> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/SigSauerP239.JPG" .
-<http://www.wikidata.org/entity/Q15991024> <http://www.wikidata.org/wiki/Property/P2561> "Zastava M 98/48" .
-<http://www.wikidata.org/entity/Q15991024> <http://www.wikidata.org/wiki/Property/P1114> 7 .
-<http://www.wikidata.org/entity/Q15991024> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Zastava%2098%2048.jpg" .
-<http://www.wikidata.org/entity/Q1041759> <http://www.wikidata.org/wiki/Property/P2561> "Pistol Mitralieră model 1996 RATMIL" .
-<http://www.wikidata.org/entity/Q1041759> <http://www.wikidata.org/wiki/Property/P1114> 6 .
-<http://www.wikidata.org/entity/Q1041759> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/RATMIL%20SMG.jpg" .
-<http://www.wikidata.org/entity/Q763038> <http://www.wikidata.org/wiki/Property/P2561> "Tanfoglio T95" .
-<http://www.wikidata.org/entity/Q763038> <http://www.wikidata.org/wiki/Property/P1114> 9 .
-<http://www.wikidata.org/entity/Q763038> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/EAA%20Witness.jpg" .
-<http://www.wikidata.org/entity/Q7159140> <http://www.wikidata.org/wiki/Property/P2561> "Pedersen rifle" .
-<http://www.wikidata.org/entity/Q7159140> <http://www.wikidata.org/wiki/Property/P1114> 8 .
-<http://www.wikidata.org/entity/Q7159140> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Pedersen%20Rifle.jpg" .
-<http://www.wikidata.org/entity/Q176451> <http://www.wikidata.org/wiki/Property/P2561> "SG-43 Goryunov" .
-<http://www.wikidata.org/entity/Q176451> <http://www.wikidata.org/wiki/Property/P1114> 9 .
-<http://www.wikidata.org/entity/Q176451> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/SG%20DF-ST-86-08093.jpg" .
-<http://www.wikidata.org/entity/Q211333> <http://www.wikidata.org/wiki/Property/P2561> "Beretta 92" .
-<http://www.wikidata.org/entity/Q211333> <http://www.wikidata.org/wiki/Property/P1114> 6 .
-<http://www.wikidata.org/entity/Q211333> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Beretta%2092%20FS.gif" .
-<http://www.wikidata.org/entity/Q1654176> <http://www.wikidata.org/wiki/Property/P2561> "Lusa submachine gun" .
-<http://www.wikidata.org/entity/Q1654176> <http://www.wikidata.org/wiki/Property/P1114> 3 .
-<http://www.wikidata.org/entity/Q1654176> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Pistola-metralhadora%20Lusa%20A2.svg" .
-<http://www.wikidata.org/entity/Q201419> <http://www.wikidata.org/wiki/Property/P2561> "Colt M1911" .
-<http://www.wikidata.org/entity/Q201419> <http://www.wikidata.org/wiki/Property/P1114> 10 .
-<http://www.wikidata.org/entity/Q201419> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/M1911A1.png" .
-<http://www.wikidata.org/entity/Q2616012> <http://www.wikidata.org/wiki/Property/P2561> "FB P-83 Wanad" .
-<http://www.wikidata.org/entity/Q2616012> <http://www.wikidata.org/wiki/Property/P1114> 7 .
-<http://www.wikidata.org/entity/Q2616012> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Pistol%20P83.jpg" .
-<http://www.wikidata.org/entity/Q1724369> <http://www.wikidata.org/wiki/Property/P2561> "Vigneron submachine gun" .
-<http://www.wikidata.org/entity/Q1724369> <http://www.wikidata.org/wiki/Property/P1114> 4 .
-<http://www.wikidata.org/entity/Q1724369> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Vigneron%20machine%20gun%20IMG%201529nc.jpg" .
-<http://www.wikidata.org/entity/Q820019> <http://www.wikidata.org/wiki/Property/P2561> "Bergmann 1896" .
-<http://www.wikidata.org/entity/Q820019> <http://www.wikidata.org/wiki/Property/P1114> 10 .
-<http://www.wikidata.org/entity/Q820019> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Pistol%20Bergmann-Bayard.jpg" .
-<http://www.wikidata.org/entity/Q842144> <http://www.wikidata.org/wiki/Property/P2561> "Schönberger-Laumann 1892" .
-<http://www.wikidata.org/entity/Q842144> <http://www.wikidata.org/wiki/Property/P1114> 1 .
-<http://www.wikidata.org/entity/Q842144> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Laumann1892.jpg" .
-<http://www.wikidata.org/entity/Q5696426> <http://www.wikidata.org/wiki/Property/P2561> "Heckler & Koch HK41" .
-<http://www.wikidata.org/entity/Q5696426> <http://www.wikidata.org/wiki/Property/P1114> 9 .
-<http://www.wikidata.org/entity/Q5696426> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/HK41%20SG1.jpg" .
-<http://www.wikidata.org/entity/Q7545050> <http://www.wikidata.org/wiki/Property/P2561> "Smith & Wesson SW1911" .
-<http://www.wikidata.org/entity/Q7545050> <http://www.wikidata.org/wiki/Property/P1114> 5 .
-<http://www.wikidata.org/entity/Q7545050> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Smith%26WessonSW1911.JPG" .
-<http://www.wikidata.org/entity/Q7198499> <http://www.wikidata.org/wiki/Property/P2561> "Pistolet modèle An IX" .
-<http://www.wikidata.org/entity/Q7198499> <http://www.wikidata.org/wiki/Property/P1114> 5 .
-<http://www.wikidata.org/entity/Q7198499> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Pistolet%20An%20IX%20IMG%205539.jpg" .
-<http://www.wikidata.org/entity/Q1949466> <http://www.wikidata.org/wiki/Property/P2561> "Mossberg 500" .
-<http://www.wikidata.org/entity/Q1949466> <http://www.wikidata.org/wiki/Property/P1114> 4 .
-<http://www.wikidata.org/entity/Q1949466> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/M590A1.png" .
-<http://www.wikidata.org/entity/Q2655279> <http://www.wikidata.org/wiki/Property/P2561> "Calico M960" .
-<http://www.wikidata.org/entity/Q2655279> <http://www.wikidata.org/wiki/Property/P1114> 7 .
-<http://www.wikidata.org/entity/Q2655279> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Calico%20M960%20SMG.jpg" .
+<http://www.wikidata.org/entity/Q1207867> <http://www.wikidata.org/wiki/Property/P2561> "Heckler & Koch SL8" .
+<http://www.wikidata.org/entity/Q1207867> <http://www.wikidata.org/wiki/Property/P1114> 17 .
+<http://www.wikidata.org/entity/Q1207867> <http://www.wikidata.org/wiki/Property/P2284> 1054 .
+<http://www.wikidata.org/entity/Q1207867> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/H%26K-SL8.jpg" .
+<http://www.wikidata.org/entity/Q7194992> <http://www.wikidata.org/wiki/Property/P2561> "Pindad PM2" .
+<http://www.wikidata.org/entity/Q7194992> <http://www.wikidata.org/wiki/Property/P1114> 9 .
+<http://www.wikidata.org/entity/Q7194992> <http://www.wikidata.org/wiki/Property/P2284> 1636 .
+<http://www.wikidata.org/entity/Q7194992> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Pindad%20PM-2.jpg" .
+<http://www.wikidata.org/entity/Q6794025> <http://www.wikidata.org/wiki/Property/P2561> "Mauser-Vergueiro" .
+<http://www.wikidata.org/entity/Q6794025> <http://www.wikidata.org/wiki/Property/P1114> 2 .
+<http://www.wikidata.org/entity/Q6794025> <http://www.wikidata.org/wiki/Property/P2284> 1490 .
+<http://www.wikidata.org/entity/Q6794025> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Mauser-Vergueiro.jpg" .
+<http://www.wikidata.org/entity/Q671785> <http://www.wikidata.org/wiki/Property/P2561> "Vetterli rifle" .
+<http://www.wikidata.org/entity/Q671785> <http://www.wikidata.org/wiki/Property/P1114> 20 .
+<http://www.wikidata.org/entity/Q671785> <http://www.wikidata.org/wiki/Property/P2284> 1398 .
+<http://www.wikidata.org/entity/Q671785> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Vetterli%20Karabiner.JPG" .
+<http://www.wikidata.org/entity/Q730669> <http://www.wikidata.org/wiki/Property/P2561> "PP-2000" .
+<http://www.wikidata.org/entity/Q730669> <http://www.wikidata.org/wiki/Property/P1114> 1 .
+<http://www.wikidata.org/entity/Q730669> <http://www.wikidata.org/wiki/Property/P2284> 1570 .
+<http://www.wikidata.org/entity/Q730669> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/PP-2000%20with%20detached%20magazine.jpg" .
+<http://www.wikidata.org/entity/Q15991121> <http://www.wikidata.org/wiki/Property/P2561> "Smith & Wesson .38/44" .
+<http://www.wikidata.org/entity/Q15991121> <http://www.wikidata.org/wiki/Property/P1114> 2 .
+<http://www.wikidata.org/entity/Q15991121> <http://www.wikidata.org/wiki/Property/P2284> 858 .
+<http://www.wikidata.org/entity/Q15991121> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20~Steve%20Z~%20-%20S%5EW%20Pre%20Model%2023%20.38%20Spl..jpg" .
+<http://www.wikidata.org/entity/Q6425660> <http://www.wikidata.org/wiki/Property/P2561> "TKB-011" .
+<http://www.wikidata.org/entity/Q6425660> <http://www.wikidata.org/wiki/Property/P1114> 12 .
+<http://www.wikidata.org/entity/Q6425660> <http://www.wikidata.org/wiki/Property/P2284> 1273 .
+<http://www.wikidata.org/entity/Q6425660> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/TKB-011%20rifle%201963%20mod%20Tula%20State%20Arms%20museum.jpg" .
+<http://www.wikidata.org/entity/Q194133> <http://www.wikidata.org/wiki/Property/P2561> "Nambu Type 94 pistol" .
+<http://www.wikidata.org/entity/Q194133> <http://www.wikidata.org/wiki/Property/P1114> 16 .
+<http://www.wikidata.org/entity/Q194133> <http://www.wikidata.org/wiki/Property/P2284> 1830 .
+<http://www.wikidata.org/entity/Q194133> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Type%2094%20Pistol.jpg" .
+<http://www.wikidata.org/entity/Q935636> <http://www.wikidata.org/wiki/Property/P2561> "FP-45 Liberator" .
+<http://www.wikidata.org/entity/Q935636> <http://www.wikidata.org/wiki/Property/P1114> 12 .
+<http://www.wikidata.org/entity/Q935636> <http://www.wikidata.org/wiki/Property/P2284> 1610 .
+<http://www.wikidata.org/entity/Q935636> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/M1942%20liberator.jpg" .
+<http://www.wikidata.org/entity/Q11735427> <http://www.wikidata.org/wiki/Property/P2561> "Mannlicher M1890 Carbine" .
+<http://www.wikidata.org/entity/Q11735427> <http://www.wikidata.org/wiki/Property/P1114> 15 .
+<http://www.wikidata.org/entity/Q11735427> <http://www.wikidata.org/wiki/Property/P2284> 1357 .
+<http://www.wikidata.org/entity/Q11735427> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Mannlicher%20M1890%20cavalry%20carbine.jpg" .
+<http://www.wikidata.org/entity/Q30116615> <http://www.wikidata.org/wiki/Property/P2561> "Lefaucheux Navy pistol model 1870" .
+<http://www.wikidata.org/entity/Q30116615> <http://www.wikidata.org/wiki/Property/P1114> 8 .
+<http://www.wikidata.org/entity/Q30116615> <http://www.wikidata.org/wiki/Property/P2284> 1096 .
+<http://www.wikidata.org/entity/Q30116615> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Lefaucheux%20navy%20pistol%201870-on%20display%204-IMG%201757-gradient.jpg" .
+<http://www.wikidata.org/entity/Q908527> <http://www.wikidata.org/wiki/Property/P2561> "Bren Ten" .
+<http://www.wikidata.org/entity/Q908527> <http://www.wikidata.org/wiki/Property/P1114> 6 .
+<http://www.wikidata.org/entity/Q908527> <http://www.wikidata.org/wiki/Property/P2284> 1219 .
+<http://www.wikidata.org/entity/Q908527> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/DCB%20Shooting%20Bren%20Ten%20%26%20SW%20610.jpg" .
+<http://www.wikidata.org/entity/Q2984500> <http://www.wikidata.org/wiki/Property/P2561> "Colt Diamondback" .
+<http://www.wikidata.org/entity/Q2984500> <http://www.wikidata.org/wiki/Property/P1114> 20 .
+<http://www.wikidata.org/entity/Q2984500> <http://www.wikidata.org/wiki/Property/P2284> 972 .
+<http://www.wikidata.org/entity/Q2984500> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Colt-diamondback.jpg" .
+<http://www.wikidata.org/entity/Q5641219> <http://www.wikidata.org/wiki/Property/P2561> "Halcón ML-57" .
+<http://www.wikidata.org/entity/Q5641219> <http://www.wikidata.org/wiki/Property/P1114> 3 .
+<http://www.wikidata.org/entity/Q5641219> <http://www.wikidata.org/wiki/Property/P2284> 947 .
+<http://www.wikidata.org/entity/Q5641219> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Armamento%20-%20Museo%20de%20Armas%20de%20la%20Naci%C3%B3n%2041.JPG" .
+<http://www.wikidata.org/entity/Q7545000> <http://www.wikidata.org/wiki/Property/P2561> "Smith & Wesson Model 1913" .
+<http://www.wikidata.org/entity/Q7545000> <http://www.wikidata.org/wiki/Property/P1114> 17 .
+<http://www.wikidata.org/entity/Q7545000> <http://www.wikidata.org/wiki/Property/P2284> 1042 .
+<http://www.wikidata.org/entity/Q7545000> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/IMAG0274.jpg" .
+<http://www.wikidata.org/entity/Q4570604> <http://www.wikidata.org/wiki/Property/P2561> "Jarmann M1884" .
+<http://www.wikidata.org/entity/Q4570604> <http://www.wikidata.org/wiki/Property/P1114> 9 .
+<http://www.wikidata.org/entity/Q4570604> <http://www.wikidata.org/wiki/Property/P2284> 1029 .
+<http://www.wikidata.org/entity/Q4570604> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Gev%C3%A4r%20fm-1881%20-%20magasinsgev%C3%A4r%20system%20Jarmann%20-%20Carl%20Gustafs%20-%20Arm%C3%A9museum.jpg" .
+<http://www.wikidata.org/entity/Q4216228> <http://www.wikidata.org/wiki/Property/P2561> "Magpul PDR" .
+<http://www.wikidata.org/entity/Q4216228> <http://www.wikidata.org/wiki/Property/P1114> 10 .
+<http://www.wikidata.org/entity/Q4216228> <http://www.wikidata.org/wiki/Property/P2284> 1950 .
+<http://www.wikidata.org/entity/Q4216228> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Magpul%20personal%20defense%20rifle%20line%20art.svg" .
+<http://www.wikidata.org/entity/Q2317131> <http://www.wikidata.org/wiki/Property/P2561> "Heckler & Koch P9" .
+<http://www.wikidata.org/entity/Q2317131> <http://www.wikidata.org/wiki/Property/P1114> 19 .
+<http://www.wikidata.org/entity/Q2317131> <http://www.wikidata.org/wiki/Property/P2284> 1052 .
+<http://www.wikidata.org/entity/Q2317131> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/HK%20P9S%20PDRM.jpg" .
+<http://www.wikidata.org/entity/Q155901> <http://www.wikidata.org/wiki/Property/P2561> "MP5" .
+<http://www.wikidata.org/entity/Q155901> <http://www.wikidata.org/wiki/Property/P1114> 19 .
+<http://www.wikidata.org/entity/Q155901> <http://www.wikidata.org/wiki/Property/P2284> 1507 .
+<http://www.wikidata.org/entity/Q155901> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/MP5.jpg" .
+<http://www.wikidata.org/entity/Q2989417> <http://www.wikidata.org/wiki/Property/P2561> "IMBEL MD" .
+<http://www.wikidata.org/entity/Q2989417> <http://www.wikidata.org/wiki/Property/P1114> 16 .
+<http://www.wikidata.org/entity/Q2989417> <http://www.wikidata.org/wiki/Property/P2284> 886 .
+<http://www.wikidata.org/entity/Q2989417> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Imbel%20md2.jpg" .
+<http://www.wikidata.org/entity/Q432661> <http://www.wikidata.org/wiki/Property/P2561> "AK-63" .
+<http://www.wikidata.org/entity/Q432661> <http://www.wikidata.org/wiki/Property/P1114> 9 .
+<http://www.wikidata.org/entity/Q432661> <http://www.wikidata.org/wiki/Property/P2284> 1692 .
+<http://www.wikidata.org/entity/Q432661> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/AMMSz.jpg" .
+<http://www.wikidata.org/entity/Q477597> <http://www.wikidata.org/wiki/Property/P2561> "Heckler & Koch SL6" .
+<http://www.wikidata.org/entity/Q477597> <http://www.wikidata.org/wiki/Property/P1114> 17 .
+<http://www.wikidata.org/entity/Q477597> <http://www.wikidata.org/wiki/Property/P2284> 1457 .
+<http://www.wikidata.org/entity/Q477597> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/H%26K%20SL6.jpg" .
+<http://www.wikidata.org/entity/Q7688930> <http://www.wikidata.org/wiki/Property/P2561> "Taurus Model 85" .
+<http://www.wikidata.org/entity/Q7688930> <http://www.wikidata.org/wiki/Property/P1114> 13 .
+<http://www.wikidata.org/entity/Q7688930> <http://www.wikidata.org/wiki/Property/P2284> 1240 .
+<http://www.wikidata.org/entity/Q7688930> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Taurus%20Model%2085.jpg" .
+<http://www.wikidata.org/entity/Q1372442> <http://www.wikidata.org/wiki/Property/P2561> "Denel NTW-20" .
+<http://www.wikidata.org/entity/Q1372442> <http://www.wikidata.org/wiki/Property/P1114> 17 .
+<http://www.wikidata.org/entity/Q1372442> <http://www.wikidata.org/wiki/Property/P2284> 1074 .
+<http://www.wikidata.org/entity/Q1372442> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/NTW-20%20rifle.jpg" .
+<http://www.wikidata.org/entity/Q269593> <http://www.wikidata.org/wiki/Property/P2561> "Thompson submachine gun" .
+<http://www.wikidata.org/entity/Q269593> <http://www.wikidata.org/wiki/Property/P1114> 15 .
+<http://www.wikidata.org/entity/Q269593> <http://www.wikidata.org/wiki/Property/P2284> 1786 .
+<http://www.wikidata.org/entity/Q269593> <http://www.wikidata.org/wiki/Property/P18> "http://commons.wikimedia.org/wiki/Special:FilePath/Submachine%20gun%20M1928%20Thompson.jpg" .
