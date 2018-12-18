@@ -292,7 +292,7 @@ label {
 					<div class="row">
 					{% for gun in gunsublist %}
 						<div class="col-md-4">
-							<a href="{{gun.image}}" class="ubea-card-item image-popup" title="{{gun.name}}: {{gun.count}} in stock">
+							<a href="{{gun.image}}" class="ubea-card-item image-popup" title="{{gun.name}}: {{gun.count}} in stock;  price: {{gun.price}}">
 								<figure>
 									<div class="overlay"><i class="ti-plus"></i></div>
 									<img src="{{gun.image}}" alt="Image" class="img-responsive">

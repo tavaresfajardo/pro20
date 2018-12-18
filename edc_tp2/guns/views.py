@@ -15,24 +15,43 @@ def home(request):
     query = """         
         PREFIX prop: <http://www.wikidata.org/wiki/Property/>
         PREFIX entity: <http://www.wikidata.org/entity/>
-        select DISTINCT ?item ?image ?name ?count  where { 
+        select DISTINCT ?item ?image ?name ?count ?price  where { 
             ?item prop:P18 ?image .
             ?item prop:P2561 ?name .
             ?item prop:P1114 ?count .
+            ?item prop:P2284 ?price .
         }
-
         ORDER BY DESC(?count)
-        
         limit 9
     """
 
    
     bindings = executeQuery(query)
-    items = [{'name':i['name']['value'], 'image':i['image']['value'], 'count':i['count']['value'] } for i in bindings ]
+    items = [{
+        'name':i['name']['value'], 
+        'image':i['image']['value'], 
+        'count':i['count']['value'],
+        'price':i['price']['value']} for i in bindings ]
 
     # objective: [['a1','a2','a3'],['b1','b2','b3'],['c1','c2','c3']]
 
+    
     gunlist = [items[i:i + 3] for i in range(0, len(items), 3)]
+    
+    
+    #get all types of weapons (instance of firearms)
+    query = """             
+        SELECT ?weapon ?weaponLabel
+        WHERE { 
+        ?weapon wdt:P31 wd:Q12796 .
+        SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+    """
+    r = requests.get(url, params = {'format': 'json', 'query': query})
+    bindings = r.json()['results']['bindings']
+    types_of_weapons = [{'weapon':i['weapon']['value'], 'label': i['weaponLabel']['value']} for i in bindings]
+    print(types_of_weapons)
+
     tparams = {
         'gunlist': gunlist
     }
