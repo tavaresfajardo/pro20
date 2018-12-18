@@ -1,0 +1,32 @@
+PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+PREFIX entity: <http://www.wikidata.org/entity/>
+SELECT ?type ?typeLabel ?value
+WHERE { 
+    	?type prop:P2561 ?typeLabel .
+    	?type prop:P2284 ?value .
+}
+ORDER BY (?value)
+
+
+
+
+PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+PREFIX entity: <http://www.wikidata.org/entity/>
+SELECT ?type ?typeLabel ?value
+WHERE { 
+    	?type prop:P2561 ?typeLabel .
+    	?type prop:P1114 ?value .
+}
+ORDER BY (?value)
+
+
+
+PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+PREFIX entity: <http://www.wikidata.org/entity/>
+SELECT ?type ?typeLabel ?label ?value
+WHERE { 
+    ?type prop:P2561 ?typeLabel;
+          prop:P2561 ?label
+    FILTER(CONTAINS(?label, "fle"))
+}
+ORDER BY (?typeLabel)
