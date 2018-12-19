@@ -12,13 +12,17 @@ newDB +=  [(wikiurl_prop+'P1114>', wikiurl_prop+'P2561>' , '"count"')]
 newDB +=  [(wikiurl_prop+'P18>', wikiurl_prop+'P2561>' , '"image"')]
 newDB +=  [(wikiurl_prop+'P2284>', wikiurl_prop+'P2561>' , '"price"')]
 
-query =("SELECT ?name ?nameLabel ?name2 ?name2Label ?image WHERE {"
-       "?name wdt:P31 wd:Q12796."
-       "?name2 wdt:P279* ?name."
-       "?name2 wdt:P18 ?image ."
+query =('SELECT DISTINCT ?name ?nameLabel ?name2 ?name2Label ?image WHERE {'
+      ' ?name wdt:P31 wd:Q12796.'
+       '?name2 wdt:P279* ?name.'
+       '?name2 wdt:P18 ?image.'
+        'FILTER NOT EXISTS { '
+       ' FILTER regex(?name2Label, "/", "i")'
+          
+      '}'
        'SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }'
-       "OPTIONAL {  }"
-       "}")
+       
+"}")
 
 print(query)
 r = requests.get(url, params = {'format': 'json', 'query': query})
