@@ -70,6 +70,37 @@ def weapontype(request):
     return render(request, 'weapontype.html', tparams)
 
 
+def search(request):
+    rg = request.GET
+
+    query = """         
+        PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+        PREFIX entity: <http://www.wikidata.org/entity/>
+        select DISTINCT ?item ?img ?label ?count ?price  where { 
+            ?item prop:P18 ?img .
+            ?item prop:P2561 ?label .
+            ?item prop:P1114 ?count .
+            ?item prop:P2284 ?price .
+        }
+        ORDER BY DESC(?count)
+    """
+
+    
+
+   
+    bindings = executeQuery(query)
+    items = [{
+        'label':i['label']['value'], 
+        'img':i['img']['value'], 
+        'count':i['count']['value'],
+        'price':i['price']['value']} for i in bindings ]
+
+    tparams = {
+        'guns': items
+    }
+    return render(request, 'search.html', tparams)
+
+
 
 def executeQuery(query):   #function to avoid repeating code
     repo_name = "Guns"
