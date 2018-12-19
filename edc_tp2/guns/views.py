@@ -84,8 +84,50 @@ def search(request):
         }
         ORDER BY DESC(?count)
     """
+#Query ordenar por preço
+    #PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+     #   PREFIX entity: <http://www.wikidata.org/entity/>
+      #  select DISTINCT ?item ?image ?name ?count ?price  where { 
+       #     ?item prop:P18 ?image .
+        #    ?item prop:P2561 ?name .
+         #   ?item prop:P1114 ?count .
+          #  ?item prop:P2284 ?price .
+        #}
+        #ORDER BY DESC(?price)
 
-    
+#Query ordenar por preço do mais barato para o mais caro
+#PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+ #       PREFIX entity: <http://www.wikidata.org/entity/>
+  #      select DISTINCT ?item ?image ?name ?count ?price  where { 
+   #         ?item prop:P18 ?image .
+    #        ?item prop:P2561 ?name .
+     #       ?item prop:P1114 ?count .
+      #      ?item prop:P2284 ?price .
+       # }
+        #ORDER BY (?price)
+
+#Query ordenar por nome A-Z
+
+#PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+ #       PREFIX entity: <http://www.wikidata.org/entity/>
+  #      select DISTINCT ?item ?image ?name ?count ?price  where { 
+   #         ?item prop:P18 ?image .
+    #        ?item prop:P2561 ?name .
+     #       ?item prop:P1114 ?count .
+      #      ?item prop:P2284 ?price .
+       # }
+        #ORDER BY (?name)
+
+#Query ordenar por nome Z-A
+#PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+ #       PREFIX entity: <http://www.wikidata.org/entity/>
+  #      select DISTINCT ?item ?image ?name ?count ?price  where { 
+   #         ?item prop:P18 ?image .
+    #        ?item prop:P2561 ?name .
+     #       ?item prop:P1114 ?count .
+      #      ?item prop:P2284 ?price .
+       # }
+       # ORDER BY DESC(?name)
 
    
     bindings = executeQuery(query)
