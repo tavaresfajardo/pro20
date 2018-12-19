@@ -45,9 +45,9 @@ table, td, th {
                 <td>{{ gun.price }}</td>
                 <td>
                     <div class="align__stock">
-                        <button onclick="addone('{{gun.label}}')" class="btn btn-green">+</button>
-                        <span>{{ gun.count }}</span>    
-                        <button onclick="removeone('{{gun.label}}')" class="btn btn-red">-</button>
+                        <button onclick="addone('{{gun.labelid}}')" class="btn btn-green">+</button>
+                        <span id="{{gun.labelid}}">{{ gun.count }}</span>    
+                        <button onclick="removeone('{{gun.labelid}}')" class="btn btn-red">-</button>
                     </div>                        
                 </td>
                
@@ -169,23 +169,20 @@ function executeQuery(query,index) {
 
 function addone(label) {
     console.log(label)
+    var A = Number(document.getElementById(label).innerHTML)
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", 'increase/'+label
-                .replace(/ /g,'_')
-                .replace(/&/g,'!'), false);
+    xhr.open("POST", 'increase/'+label, false);
     xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send({
-        name: label
-    })
+    xhr.send()
+    document.getElementById(label).innerHTML = A+1
 }
 function removeone(label) {
+    
+    var A = Number(document.getElementById(label).innerHTML)
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", 'decrease/'+label
-                .replace(/ /g,'_')
-                .replace(/&/g,'!'), false);
+    xhr.open("POST", 'decrease/'+label, false);
     xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send({
-        name: label
-    })
+    xhr.send()
+    document.getElementById(label).innerHTML = Math.max(A-1,0)
 }
 </script>

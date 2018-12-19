@@ -163,6 +163,7 @@ def search(request):
     bindings = executeQuery(query)
     items = [{
         'label':i['label']['value'], 
+        'labelid':i['label']['value'].replace(' ','_').replace('&','!'),
         'img':i['img']['value'], 
         'count':i['count']['value'],
         'price':i['price']['value']} for i in bindings ]
@@ -192,6 +193,7 @@ def increase(request,name):
     rg = request.POST
     print(rg)
     print(name)
+    name = name.replace('_',' ').replace('!','&')
     update = '''         
         PREFIX prop: <http://www.wikidata.org/wiki/Property/>
         PREFIX entity: <http://www.wikidata.org/entity/>
