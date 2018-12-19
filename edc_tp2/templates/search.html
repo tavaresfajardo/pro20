@@ -23,7 +23,7 @@ table, td, th {
                     </div>
                 </div>
             {% endfor %}
-            <h3>SEARCH ALL WEAPONS</h3>
+            <h3 style="margin-top:50px;">SEARCH ALL WEAPONS</h3>
             <input style="width:150px" id="filterinputwiki" class="input" type="text">
         </div>
        
@@ -39,18 +39,20 @@ table, td, th {
             </tr>
             {% for gun in guns %}
             <tr class="align__class">
-                <td>{{ gun.label }}</td>
-                <td> <img class="image__gun" src="{{gun.img}}" alt=""></td>
-                <td>{{ gun.price }}</td>
-                <td>
-                    <div class="align__stock">
-                        <button class="btn btn-green">+</button>
-                        <span>{{ gun.count }}</span>    
-                        <button class="btn btn-red">-</button>
-                    </div>
-                
+                <form action="">
+                    <td>{{ gun.label }}</td>
+                    <td> <img class="image__gun" src="{{gun.img}}" alt=""></td>
+                    <td>{{ gun.price }}</td>
+                    <td>
+                        <div class="align__stock">
+                            <button class="btn btn-green">+</button>
+                            <span>{{ gun.count }}</span>    
+                            <button class="btn btn-red">-</button>
+                        </div>
                     
-                </td>
+                        
+                    </td>
+                </form>
             </tr>
             {% endfor %}
         </table>
@@ -163,6 +165,7 @@ table, td, th {
 function executeQuery(query,index) {
     var filter = document.getElementById("filterinput").value
     window.location.replace("/search?filter="+filter+"&setting="+query[index]);
+    
 }
 
 </script>
