@@ -9,36 +9,49 @@ table, td, th {
 </head>
 <body>
 
-<div class="align__table">
-
-
-</div>
-<div class="align__table">
-    <table id="customers">
-        
-        <tr>
-            <th>Name</th>
-            <th>Img</th>
-            <th>Price</th>
-            <th>Stock</th>
-        </tr>
-        {% for gun in guns %}
-        <tr class="align__class">
-            <td>{{ gun.label }}</td>
-            <td> <img class="image__gun" src="{{gun.img}}" alt=""></td>
-            <td>{{ gun.price }}</td>
-            <td>
-                <div class="align__stock">
-                    <button class="btn btn-green">+</button>
-                    <span>{{ gun.count }}</span>    
-                    <button class="btn btn-red">-</button>
+<div class="search">
+    <div class="search__options">
+        <input style="width:100px" id="filterinput" type="text">
+        {% for control in controls %}
+            <div>
+                <h4>{{control.label}}</h4>
+                <div>
+                    
+                    <button onclick="executeQuery({{control.setting}},0)"> Crescent </button>
+                    <button onclick="executeQuery({{control.setting}},1)"> Decrescent </button>
+                    
                 </div>
-               
-                
-            </td>
-        </tr>
+            </div>
         {% endfor %}
-    </table>
+    </div>
+    <div class="align__table">
+        <table id="customers">
+            
+            <tr>
+                <th>Name</th>
+                <th>Img</th>
+                <th>Price</th>
+                <th>Stock</th>
+            </tr>
+            {% for gun in guns %}
+            <tr class="align__class">
+                <td>{{ gun.label }}</td>
+                <td> <img class="image__gun" src="{{gun.img}}" alt=""></td>
+                <td>{{ gun.price }}</td>
+                <td>
+                    <div class="align__stock">
+                        <button class="btn btn-green">+</button>
+                        <span>{{ gun.count }}</span>    
+                        <button class="btn btn-red">-</button>
+                    </div>
+                
+                    
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
 </div>
 </body>
 </html>
@@ -70,6 +83,24 @@ table, td, th {
     justify-content: space-around;
     align-items: center; 
 }
+.search {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    text-align: center;
+}
+.search__options {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+
+}
+.search__options button {
+    width: 100%;
+
+}
+
+
 .align__stock > * {
     margin: 10px 0; 
 }
@@ -108,3 +139,12 @@ table, td, th {
 }
 
 </style>
+
+<script>
+
+function executeQuery(query,index) {
+    var filter = document.getElementById("filterinput").value
+    window.location.replace("/search?filter="+filter+"&setting="+query[index]);
+}
+
+</script>

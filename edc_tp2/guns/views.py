@@ -73,62 +73,91 @@ def weapontype(request):
 def search(request):
     rg = request.GET
 
-    query = """         
-        PREFIX prop: <http://www.wikidata.org/wiki/Property/>
-        PREFIX entity: <http://www.wikidata.org/entity/>
-        select DISTINCT ?item ?img ?label ?count ?price  where { 
-            ?item prop:P18 ?img .
-            ?item prop:P2561 ?label .
-            ?item prop:P1114 ?count .
-            ?item prop:P2284 ?price .
-        }
-        ORDER BY DESC(?count)
-    """
-#Query ordenar por preço
-    #PREFIX prop: <http://www.wikidata.org/wiki/Property/>
-     #   PREFIX entity: <http://www.wikidata.org/entity/>
-      #  select DISTINCT ?item ?image ?name ?count ?price  where { 
-       #     ?item prop:P18 ?image .
-        #    ?item prop:P2561 ?name .
-         #   ?item prop:P1114 ?count .
-          #  ?item prop:P2284 ?price .
-        #}
-        #ORDER BY DESC(?price)
+    filter = ''         #default filter option --> no filter
+    setting = 'sd'      #default search option
+    if 'filter' in rg:
+        filter = rg['filter']
+    
+    filterstr='FILTER regex(?label, "{}", "i" ) .'.format(filter)
 
-#Query ordenar por preço do mais barato para o mais caro
-#PREFIX prop: <http://www.wikidata.org/wiki/Property/>
- #       PREFIX entity: <http://www.wikidata.org/entity/>
-  #      select DISTINCT ?item ?image ?name ?count ?price  where { 
-   #         ?item prop:P18 ?image .
-    #        ?item prop:P2561 ?name .
-     #       ?item prop:P1114 ?count .
-      #      ?item prop:P2284 ?price .
-       # }
-        #ORDER BY (?price)
 
-#Query ordenar por nome A-Z
+    if 'setting' in rg:
+        setting = rg['setting']
 
-#PREFIX prop: <http://www.wikidata.org/wiki/Property/>
- #       PREFIX entity: <http://www.wikidata.org/entity/>
-  #      select DISTINCT ?item ?image ?name ?count ?price  where { 
-   #         ?item prop:P18 ?image .
-    #        ?item prop:P2561 ?name .
-     #       ?item prop:P1114 ?count .
-      #      ?item prop:P2284 ?price .
-       # }
-        #ORDER BY (?name)
 
-#Query ordenar por nome Z-A
-#PREFIX prop: <http://www.wikidata.org/wiki/Property/>
- #       PREFIX entity: <http://www.wikidata.org/entity/>
-  #      select DISTINCT ?item ?image ?name ?count ?price  where { 
-   #         ?item prop:P18 ?image .
-    #        ?item prop:P2561 ?name .
-     #       ?item prop:P1114 ?count .
-      #      ?item prop:P2284 ?price .
-       # }
-       # ORDER BY DESC(?name)
-
+    if setting=='sd':   #stock desc
+            
+        query = """         
+            PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+            PREFIX entity: <http://www.wikidata.org/entity/>
+            select DISTINCT ?item ?img ?label ?count ?price  where { 
+                ?item prop:P18 ?img .
+                ?item prop:P2561 ?label .
+                ?item prop:P1114 ?count .
+                ?item prop:P2284 ?price .""" + filterstr + """
+            }
+            ORDER BY DESC(?count)
+        """
+    elif setting=='sc':
+        query = """         
+            PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+            PREFIX entity: <http://www.wikidata.org/entity/>
+            select DISTINCT ?item ?img ?label ?count ?price  where { 
+                ?item prop:P18 ?img .
+                ?item prop:P2561 ?label .
+                ?item prop:P1114 ?count .
+                ?item prop:P2284 ?price .""" + filterstr + """
+            }
+            ORDER BY (?count)
+        """
+    elif setting=='pc':
+        query = """         
+            PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+            PREFIX entity: <http://www.wikidata.org/entity/>
+            select DISTINCT ?item ?img ?label ?count ?price  where { 
+                ?item prop:P18 ?img .
+                ?item prop:P2561 ?label .
+                ?item prop:P1114 ?count .
+                ?item prop:P2284 ?price .""" + filterstr + """
+            }
+            ORDER BY (?price)
+        """
+    elif setting=='pd':
+        query = """         
+            PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+            PREFIX entity: <http://www.wikidata.org/entity/>
+            select DISTINCT ?item ?img ?label ?count ?price  where { 
+                ?item prop:P18 ?img .
+                ?item prop:P2561 ?label .
+                ?item prop:P1114 ?count .
+                ?item prop:P2284 ?price .""" + filterstr + """
+            }
+            ORDER BY DESC(?price)
+        """
+    elif setting=='nc':
+        query = """         
+            PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+            PREFIX entity: <http://www.wikidata.org/entity/>
+            select DISTINCT ?item ?img ?label ?count ?price  where { 
+                ?item prop:P18 ?img .
+                ?item prop:P2561 ?label .
+                ?item prop:P1114 ?count .
+                ?item prop:P2284 ?price .""" + filterstr + """
+            }
+            ORDER BY (?label)
+        """
+    elif setting=='nd':
+        query = """         
+            PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+            PREFIX entity: <http://www.wikidata.org/entity/>
+            select DISTINCT ?item ?img ?label ?count ?price  where { 
+                ?item prop:P18 ?img .
+                ?item prop:P2561 ?label .
+                ?item prop:P1114 ?count .
+                ?item prop:P2284 ?price .""" + filterstr + """
+            }
+            ORDER BY DESC(?label)
+        """
    
     bindings = executeQuery(query)
     items = [{
@@ -137,8 +166,16 @@ def search(request):
         'count':i['count']['value'],
         'price':i['price']['value']} for i in bindings ]
 
+
+    controls = [
+        { 'label': 'stock', 'setting': [ 'sc','sd'] },
+        { 'label': 'price', 'setting': ['pc','pd'] },
+        { 'label': 'name', 'setting': ['nc','nd'] }
+    ]
+
     tparams = {
-        'guns': items
+        'guns': items,
+        'controls': controls
     }
     return render(request, 'search.html', tparams)
 
