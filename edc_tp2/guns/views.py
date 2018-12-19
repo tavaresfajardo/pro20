@@ -180,6 +180,16 @@ def search(request):
     return render(request, 'search.html', tparams)
 
 
+def remove(request):
+    rg = request.POST
+    name,stock = rg['name'],rg['price']
+    return render(request, 'ok', {})
+
+def add(request):
+    rg = request.POST
+    name,stock = rg['name'],rg['price']
+    return render(request, 'ok', {})
+
 
 def executeQuery(query):   #function to avoid repeating code
     repo_name = "Guns"
