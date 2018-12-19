@@ -21,6 +21,8 @@ from guns import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('search/',views.search, name='search')
+    path('search/',views.search, name='search'),
+    path('search/increase/<str:name>',views.increase, name='increase'),
+    path('search/decrease/<str:name>',views.decrease, name='decrease')
     
 ]

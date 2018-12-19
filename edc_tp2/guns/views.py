@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpRequest,HttpResponse,Http404
 import requests
 import json
+from django.views.decorators.csrf import csrf_exempt
 from s4api.graphdb_api import GraphDBApi
 from s4api.swagger import ApiClient
 url = 'https://query.wikidata.org/sparql'
@@ -185,10 +186,61 @@ def remove(request):
     name,stock = rg['name'],rg['price']
     return render(request, 'ok', {})
 
-def add(request):
+
+@csrf_exempt
+def increase(request,name):
     rg = request.POST
-    name,stock = rg['name'],rg['price']
-    return render(request, 'ok', {})
+    print(rg)
+    print(name)
+    update = '''         
+        PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+        PREFIX entity: <http://www.wikidata.org/entity/>
+
+
+        DELETE {
+            ?item prop:P1114 ?count .
+        }  
+        INSERT {
+            ?item prop:P1114 ?cc.
+        }
+        WHERE{
+            ?item prop:P2561 "''' + name +'''".
+            ?item prop:P1114 ?count .
+            BIND((?count+1) as ?cc)
+        }
+
+        '''
+    executeUpdate(update)
+    return render(request,'index.html',{})
+
+
+@csrf_exempt
+def decrease(request,name):
+    rg = request.POST
+    print(rg)
+    name = name.replace('_',' ').replace('!','&')
+    print(name)
+    update = '''         
+        PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+        PREFIX entity: <http://www.wikidata.org/entity/>
+
+
+        DELETE {
+            ?item prop:P1114 ?count .
+        }  
+        INSERT {
+            ?item prop:P1114 ?cc.
+        }
+        WHERE{
+            FILTER(?count != 0 )
+            ?item prop:P2561 "''' + name +'''".
+            ?item prop:P1114 ?count .
+            BIND((?count-1) as ?cc)
+        }
+
+        '''
+    executeUpdate(update)
+    return render(request,'index.html',{})
 
 
 def executeQuery(query):   #function to avoid repeating code
@@ -200,3 +252,13 @@ def executeQuery(query):   #function to avoid repeating code
     res = json.loads(res)
     bindings = res['results']['bindings']
     return bindings
+
+
+def executeUpdate(update):   #function to avoid repeating code
+    repo_name = "Guns"
+    print('NO PROBLEM SO FAR')
+    client = ApiClient(endpoint=endpoint)
+    accessor = GraphDBApi(client)
+    payload_update = {"update": update}
+    print(payload_update)
+    res = accessor.sparql_update(body=payload_update,repo_name=repo_name)

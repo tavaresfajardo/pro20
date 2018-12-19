@@ -39,20 +39,18 @@ table, td, th {
             </tr>
             {% for gun in guns %}
             <tr class="align__class">
-                <form action="">
-                    <td>{{ gun.label }}</td>
-                    <td> <img class="image__gun" src="{{gun.img}}" alt=""></td>
-                    <td>{{ gun.price }}</td>
-                    <td>
-                        <div class="align__stock">
-                            <button class="btn btn-green">+</button>
-                            <span>{{ gun.count }}</span>    
-                            <button class="btn btn-red">-</button>
-                        </div>
-                    
-                        
-                    </td>
-                </form>
+            
+                <td>{{ gun.label }}</td>
+                <td> <img class="image__gun" src="{{gun.img}}" alt=""></td>
+                <td>{{ gun.price }}</td>
+                <td>
+                    <div class="align__stock">
+                        <button onclick="addone('{{gun.label}}')" class="btn btn-green">+</button>
+                        <span>{{ gun.count }}</span>    
+                        <button onclick="removeone('{{gun.label}}')" class="btn btn-red">-</button>
+                    </div>                        
+                </td>
+               
             </tr>
             {% endfor %}
         </table>
@@ -113,6 +111,7 @@ table, td, th {
     font-size:15px;
     background-color: #4CAF50;
     font-weight: 600;
+    cursor: pointer;
 
 }
 
@@ -168,4 +167,25 @@ function executeQuery(query,index) {
     
 }
 
+function addone(label) {
+    console.log(label)
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", 'increase/'+label
+                .replace(/ /g,'_')
+                .replace(/&/g,'!'), false);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send({
+        name: label
+    })
+}
+function removeone(label) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", 'decrease/'+label
+                .replace(/ /g,'_')
+                .replace(/&/g,'!'), false);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send({
+        name: label
+    })
+}
 </script>
