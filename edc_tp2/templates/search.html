@@ -11,18 +11,22 @@ table, td, th {
 
 <div class="search">
     <div class="search__options">
-        <input style="width:100px" id="filterinput" type="text">
-        {% for control in controls %}
-            <div>
-                <h4>{{control.label}}</h4>
-                <div>
-                    
-                    <button onclick="executeQuery({{control.setting}},0)"> Crescent </button>
-                    <button onclick="executeQuery({{control.setting}},1)"> Decrescent </button>
-                    
+        <div>
+            <h3>SEARCH YOUR WEAPONS</h3>
+            <input style="width:150px" id="filterinput" class="input" type="text">
+            {% for control in controls %}
+                <div class="search__control">
+                    <h3>{{control.label}}</h3>
+                    <div>
+                        <button onclick="executeQuery({{control.setting}},0)"> Crescent &uarr;</button>
+                        <button onclick="executeQuery({{control.setting}},1)"> Decrescent &darr;</button>
+                    </div>
                 </div>
-            </div>
-        {% endfor %}
+            {% endfor %}
+            <h3>SEARCH ALL WEAPONS</h3>
+            <input style="width:150px" id="filterinputwiki" class="input" type="text">
+        </div>
+       
     </div>
     <div class="align__table">
         <table id="customers">
@@ -85,18 +89,28 @@ table, td, th {
 }
 .search {
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: 1fr min-content;
     text-align: center;
 }
 .search__options {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     padding: 10px;
 
 }
+.search__control {
+    border: 1px solid black;
+    margin: 5px auto;
+    padding: 10px;
+}
 .search__options button {
-    width: 100%;
+    width: 200px;
+    padding: 15px 0;
+    margin: 5px;
+    font-size:15px;
+    background-color: #4CAF50;
+    font-weight: 600;
 
 }
 
@@ -113,7 +127,11 @@ table, td, th {
 .btn-green{
     background-color: #33bb33;
 }
-
+.input {
+    border-radius: 3px;
+    font-size: 20px;
+    background-color: #eeee99;
+}
 
 #customers {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;

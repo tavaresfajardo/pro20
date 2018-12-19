@@ -142,8 +142,7 @@ label {
 						<li><a href="#" data-nav-section="services">Services</a></li>
 						<li><a href="#" data-nav-section="portfolio">Top Guns</a></li>
 						<li><a href="#" data-nav-section="about">Gun Stock</a></li>
-						<button id="bomdia" onclick="myFunction()">Click me</button>
-						<input type="text" id="demo">
+						<button id="bomdia" onclick="myFunction()">Search</button>
 					</ul>
 				</div>
 			</div>
@@ -382,7 +381,6 @@ label {
 
 <script>
 		function myFunction() {
-		  var a = document.getElementById("demo").value
 		  window.location.replace("/search");
 		  console.log(a)
 		  document.getElementById("bomdia").innerHTML = a
