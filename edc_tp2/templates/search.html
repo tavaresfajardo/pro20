@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html version="XHTML+RDFa 1.1" xmlns="http://www.w3.org/1999/xhtml"
+            xmlns:entity="http://www.wikidata.org/entity/"
+            xmlns:prop="http://www.wikidata.org/wiki/Property/"
+            lang="en">
 <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -14,6 +18,7 @@ table, td, th {
 <div class="search">
     <div class="search__options">
         <div>
+                <button onclick="window.location.replace('/')"  class="btn"><i class="fa fa-home"></i> Home</button>
             <h3>SEARCH YOUR WEAPONS</h3>
             <input style="width:150px" id="filterinput" class="input" type="text">
             {% for control in controls %}
@@ -47,8 +52,11 @@ table, td, th {
             {% for gun in guns %}
             <tr class="align__class">
             
-                <td>{{ gun.label }}</td>
-                <td> <img class="image__gun" src="{{gun.img}}" alt=""></td>
+                <td><span property="prop:P2561" href="http://www.wikidata.org/wiki/Property/">{{ gun.label }}</span></td>
+                <td><span property="prop:P18" href="http://www.wikidata.org/wiki/Property/" >
+                        <img class="image__gun" src="{{gun.img}}" alt="">
+                </span> 
+                </td>
                 <td>
                     <input style="width:100px" class="input" type="number" id="{{gun.id}}__input" value="1000"> 
                     <button id="{{gun.id}}" onclick="addweapon('{{gun.id}}')" class="btn btn-green">+</button>                    
@@ -66,13 +74,22 @@ table, td, th {
             {% for gun in guns %}
             <tr class="align__class">
             
-                <td>{{ gun.label }}</td>
-                <td> <img class="image__gun" src="{{gun.img}}" alt=""></td>
-                <td>{{ gun.price }}</td>
+                <td><span property="prop:P2561" href="http://www.wikidata.org/wiki/Property/">{{ gun.label }}</span></td>
+                <td><span property="prop:P18" href="http://www.wikidata.org/wiki/Property/" >
+                        <img class="image__gun" src="{{gun.img}}" alt="">
+                </span> 
+                </td>
+                <td>
+                    <span property="prop:P2284" href="http://www.wikidata.org/wiki/Property/">
+                            {{ gun.price }}
+                    </span>
+                </td>
                 <td>
                     <div class="align__stock">
                         <button onclick="addone('{{gun.labelid}}')" class="btn btn-green">+</button>
-                        <span id="{{gun.labelid}}">{{ gun.count }}</span>    
+                        <span property="prop:P1114" href="http://www.wikidata.org/wiki/Property/" id="{{gun.labelid}}">
+                            {{ gun.count }}
+                        </span>    
                         <button onclick="removeone('{{gun.labelid}}')" class="btn btn-red">-</button>
                     </div>                        
                 </td>
