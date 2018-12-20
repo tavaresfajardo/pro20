@@ -72,22 +72,22 @@ table, td, th {
                 <th>Stock</th>
             </tr>
             {% for gun in guns %}
-            <tr class="align__class">
+            <tr about="{{gun.id}}" class="align__class">
             
-                <td><span property="prop:P2561" href="http://www.wikidata.org/wiki/Property/">{{ gun.label }}</span></td>
-                <td><span property="prop:P18" href="http://www.wikidata.org/wiki/Property/" >
-                        <img class="image__gun" src="{{gun.img}}" alt="">
+                <td><span property="prop:P2561" >{{ gun.label }}</span></td>
+                <td><span   >
+                        <img property="prop:P18" class="image__gun" src="{{gun.img}}" alt="">
                 </span> 
                 </td>
                 <td>
-                    <span property="prop:P2284" href="http://www.wikidata.org/wiki/Property/">
+                    <span property="prop:P2284"    >
                             {{ gun.price }}
                     </span>
                 </td>
                 <td>
                     <div class="align__stock">
                         <button onclick="addone('{{gun.labelid}}')" class="btn btn-green">+</button>
-                        <span property="prop:P1114" href="http://www.wikidata.org/wiki/Property/" id="{{gun.labelid}}">
+                        <span property="prop:P1114"  id="{{gun.labelid}}">
                             {{ gun.count }}
                         </span>    
                         <button onclick="removeone('{{gun.labelid}}')" class="btn btn-red">-</button>
