@@ -50,10 +50,10 @@ table, td, th {
                 <th>ADD WEAPON</th>
             </tr>
             {% for gun in guns %}
-            <tr class="align__class">
+            <tr about="{{gun.id}}" class="align__class">
             
-                <td><span property="prop:P2561" href="http://www.wikidata.org/wiki/Property/">{{ gun.label }}</span></td>
-                <td><span property="prop:P18" href="http://www.wikidata.org/wiki/Property/" >
+                <td><span property="prop:P2561">{{ gun.label }}</span></td>
+                <td><span property="prop:P18">
                         <img class="image__gun" src="{{gun.img}}" alt="">
                 </span> 
                 </td>
@@ -75,7 +75,7 @@ table, td, th {
             <tr about="{{gun.id}}" class="align__class">
             
                 <td><span property="prop:P2561" >{{ gun.label }}</span></td>
-                <td><span   >
+                <td><span >
                         <img property="prop:P18" class="image__gun" src="{{gun.img}}" alt="">
                 </span> 
                 </td>

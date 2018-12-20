@@ -16,18 +16,16 @@
 			
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>gunhouse</title>
+	<title property="entity:title">gunhouse</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by freshdesignweb.com" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="freshdesignweb.com" />
 
   	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
+	<!--<meta property="og:title" content=""/>-->
+	<!--<meta property="og:image" content=""/>-->
+	
 	<meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
@@ -152,7 +150,7 @@ label {
 	<div id="ubea-hero" class="js-fullheight"  data-section="home">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(static/images/img_bg_2.jpg);">
+		   	<li property="image" style="background-image: url(static/images/img_bg_2.jpg);">
 		   		<div class="overlay"></div>
 		   		<div class="container">
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
@@ -162,7 +160,7 @@ label {
 		   			</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(static/images/img_bg_1.jpg);">
+		   	<li property="image" style="background-image: url(static/images/img_bg_1.jpg);">
 		   		<div class="overlay"></div>
 		   		<div class="container">
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
@@ -172,7 +170,7 @@ label {
 		   			</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(static/images/img_bg_3.jpg);">
+		   	<li property="image" style="background-image: url(static/images/img_bg_3.jpg);">
 		   		<div class="overlay"></div>
 		   		<div class="container">
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
@@ -198,13 +196,15 @@ label {
 				{% for gunsublist in gunlist %}
 					<div class="row">
 					{% for gun in gunsublist %}
-						<div class="col-md-4">
+						<div about="{{gun.id}}" class="col-md-4">
 							<a href="{{gun.image}}" class="ubea-card-item image-popup" title="{{gun.name}}: {{gun.count}} in stock;  price: {{gun.price}}">
+								
+								
 								<figure>
 									<div class="overlay"><i class="ti-plus"></i></div>
 									<img src="{{gun.image}}" alt="Image" class="img-responsive">
 								</figure>
-								{{gun.name}}
+								<span property="prop:P2561">{{gun.name}}</span>
 							</a>
 						</div>
 					{% endfor %}
