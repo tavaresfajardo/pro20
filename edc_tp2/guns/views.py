@@ -81,7 +81,6 @@ def search(request):
     
     filterstr='FILTER regex(?label, "{}", "i" ) .'.format(filter)
 
-
     if 'setting' in rg:
         setting = rg['setting']
 
@@ -99,7 +98,7 @@ def search(request):
             }
             ORDER BY DESC(?count)
         """
-    elif setting=='sc':
+    elif setting=='sc':   #stock cres
         query = """         
             PREFIX prop: <http://www.wikidata.org/wiki/Property/>
             PREFIX entity: <http://www.wikidata.org/entity/>
@@ -111,7 +110,7 @@ def search(request):
             }
             ORDER BY (?count)
         """
-    elif setting=='pc':
+    elif setting=='pc':   #price cres
         query = """         
             PREFIX prop: <http://www.wikidata.org/wiki/Property/>
             PREFIX entity: <http://www.wikidata.org/entity/>
@@ -123,7 +122,7 @@ def search(request):
             }
             ORDER BY (?price)
         """
-    elif setting=='pd':
+    elif setting=='pd':   #price desc
         query = """         
             PREFIX prop: <http://www.wikidata.org/wiki/Property/>
             PREFIX entity: <http://www.wikidata.org/entity/>
@@ -135,7 +134,7 @@ def search(request):
             }
             ORDER BY DESC(?price)
         """
-    elif setting=='nc':
+    elif setting=='nc':   #name cres
         query = """         
             PREFIX prop: <http://www.wikidata.org/wiki/Property/>
             PREFIX entity: <http://www.wikidata.org/entity/>
@@ -147,7 +146,7 @@ def search(request):
             }
             ORDER BY (?label)
         """
-    elif setting=='nd':
+    elif setting=='nd':   #name desc
         query = """         
             PREFIX prop: <http://www.wikidata.org/wiki/Property/>
             PREFIX entity: <http://www.wikidata.org/entity/>
@@ -159,14 +158,44 @@ def search(request):
             }
             ORDER BY DESC(?label)
         """
-   
-    bindings = executeQuery(query)
-    items = [{
-        'label':i['label']['value'], 
-        'labelid':i['label']['value'].replace(' ','_').replace('&','!'),
-        'img':i['img']['value'], 
-        'count':i['count']['value'],
-        'price':i['price']['value']} for i in bindings ]
+
+    elif setting=='wiki': #wikidata query
+        query = '''
+        SELECT DISTINCT ?item ?name2 ?label ?image 
+        WHERE {
+            ?item wdt:P31 wd:Q12796.
+            ?name2 wdt:P279* ?item.
+            ?name2 wdt:P18 ?image;
+                rdfs:label ?label. ''' + filterstr + '''
+                FILTER(LANGMATCHES(LANG(?label), "en"))
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+        }ORDER BY(?label)
+        limit 50
+        '''
+
+    wiki = setting=='wiki'
+
+    if wiki:
+        bindings = executeWikiQuery(query)    
+        print(len(set([i['name2']['value'] for i in bindings])))
+        data = { i['name2']['value']:(i['label']['value'],i['image']['value'])  for i in bindings  }  #img id label
+        print('query',query)
+        items = [{
+            'id':k.split('/')[-1],
+            'label':v[0],
+            'img':v[1]
+        } for k,v in data.items() ]
+        
+ 
+    else:
+        bindings = executeQuery(query)
+        items = [{
+            'id':i['item']['value'],
+            'label':i['label']['value'], 
+            'labelid':i['label']['value'].replace(' ','_').replace('&','!'),
+            'img':i['img']['value'], 
+            'count':i['count']['value'],
+            'price':i['price']['value']} for i in bindings ]
 
 
     controls = [
@@ -177,7 +206,9 @@ def search(request):
 
     tparams = {
         'guns': items,
-        'controls': controls
+        'controls': controls,
+        'wiki': wiki,
+        'filter': filter
     }
     return render(request, 'search.html', tparams)
 
@@ -206,22 +237,20 @@ def increase(request,name):
             ?item prop:P1114 ?cc.
         }
         WHERE{
-            ?item prop:P2561 "''' + name +'''".
+            ?item prop:P2561 "''' + name + '''".
             ?item prop:P1114 ?count .
             BIND((?count+1) as ?cc)
         }
 
         '''
     executeUpdate(update)
-    return render(request,'index.html',{})
+    return render(request,'ok.html',{})
 
 
 @csrf_exempt
 def decrease(request,name):
-    rg = request.POST
-    print(rg)
+
     name = name.replace('_',' ').replace('!','&')
-    print(name)
     update = '''         
         PREFIX prop: <http://www.wikidata.org/wiki/Property/>
         PREFIX entity: <http://www.wikidata.org/entity/>
@@ -242,7 +271,44 @@ def decrease(request,name):
 
         '''
     executeUpdate(update)
-    return render(request,'index.html',{})
+    return render(request,'ok.html',{})
+
+@csrf_exempt
+def add(request,id,price):
+
+
+
+    #wikidata query
+    query = '''
+        select distinct ?image ?label
+        where {
+            wd:'''+ id +''' wdt:P18 ?image.
+            wd:'''+ id +''' rdfs:label ?label.
+            FILTER (langMatches( lang(?label), "en" ) )
+        }
+    '''
+    data = executeWikiQuery(query)[0]
+    name = data['label']['value']
+    image = data['image']['value']
+
+
+    #insert new weapon
+    update = '''
+        PREFIX prop: <http://www.wikidata.org/wiki/Property/>
+        PREFIX entity: <http://www.wikidata.org/entity/>
+        INSERT DATA
+        {
+            entity:''' + id + ''' prop:P2561 "''' + name + '''".
+            entity:''' + id + ''' prop:P2284 ''' + str(price) + '''.
+            entity:''' + id + ''' prop:P18 "''' + image + '''".
+            entity:''' + id + ''' prop:P1114 0.
+        }
+    '''
+    
+    executeUpdate(update)
+    print(update)
+    return render(request,'ok.html',{})
+
 
 
 def executeQuery(query):   #function to avoid repeating code
@@ -256,9 +322,17 @@ def executeQuery(query):   #function to avoid repeating code
     return bindings
 
 
+
+
+def executeWikiQuery(query):   #function to avoid repeating code
+    r = requests.get(url, params = {'format': 'json', 'query': query})
+    return r.json()['results']['bindings']
+
+
+
+
 def executeUpdate(update):   #function to avoid repeating code
     repo_name = "Guns"
-    print('NO PROBLEM SO FAR')
     client = ApiClient(endpoint=endpoint)
     accessor = GraphDBApi(client)
     payload_update = {"update": update}

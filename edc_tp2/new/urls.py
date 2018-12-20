@@ -23,6 +23,7 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('search/',views.search, name='search'),
     path('search/increase/<str:name>',views.increase, name='increase'),
-    path('search/decrease/<str:name>',views.decrease, name='decrease')
+    path('search/decrease/<str:name>',views.decrease, name='decrease'),
+    path('search/add/<str:id>/<int:price>',views.add, name='add')
     
 ]

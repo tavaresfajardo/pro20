@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 table, td, th {
   border: 1px solid black;
@@ -25,12 +27,36 @@ table, td, th {
             {% endfor %}
             <h3 style="margin-top:50px;">SEARCH ALL WEAPONS</h3>
             <input style="width:150px" id="filterinputwiki" class="input" type="text">
+            <button onclick="executeWikiQuery('wiki')" type="submit"><i class="fa fa-search"></i></button>
         </div>
        
     </div>
     <div class="align__table">
+        {% if wiki %}
+        <h2>Wiki Results ({{filter}})</h2>
+        {% else %}
+        <h2>Store Results ({{filter}})</h2>
+        {% endif %}
         <table id="customers">
+            {% if wiki %}   <!-- wiki search -->
+            <tr>
+                <th>Name</th>
+                <th>Img</th>
+                <th>ADD WEAPON</th>
+            </tr>
+            {% for gun in guns %}
+            <tr class="align__class">
             
+                <td>{{ gun.label }}</td>
+                <td> <img class="image__gun" src="{{gun.img}}" alt=""></td>
+                <td>
+                    <input style="width:100px" class="input" type="number" id="{{gun.id}}__input" value="1000"> 
+                    <button id="{{gun.id}}" onclick="addweapon('{{gun.id}}')" class="btn btn-green">+</button>                    
+                </td>
+               
+            </tr>
+            {% endfor %}
+            {% else %}      <!-- database search -->
             <tr>
                 <th>Name</th>
                 <th>Img</th>
@@ -53,6 +79,8 @@ table, td, th {
                
             </tr>
             {% endfor %}
+            
+            {% endif %}
         </table>
     </div>
 
@@ -73,8 +101,7 @@ table, td, th {
     min-width: 150px;
 }
 .align__table {
-    display: flex;
-    justify-content: flex-end;
+    
 }
 
 .align__buttons {
@@ -165,9 +192,12 @@ table, td, th {
 function executeQuery(query,index) {
     var filter = document.getElementById("filterinput").value
     window.location.replace("/search?filter="+filter+"&setting="+query[index]);
-    
 }
 
+function executeWikiQuery(query) {
+    var filter = document.getElementById("filterinputwiki").value
+    window.location.replace("/search?filter="+filter+"&setting=wiki");
+}
 function addone(label) {
     console.log(label)
     var A = Number(document.getElementById(label).innerHTML)
@@ -185,5 +215,13 @@ function removeone(label) {
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send()
     document.getElementById(label).innerHTML = Math.max(A-1,0)
+}
+function addweapon(label) {
+    var price = document.getElementById(label+'__input').value;
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", 'add/'+label+'/'+price, false);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send()
+    document.getElementById(label).disabled = true;
 }
 </script>
