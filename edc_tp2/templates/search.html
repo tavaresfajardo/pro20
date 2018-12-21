@@ -219,7 +219,7 @@ function executeWikiQuery(query) {
     var filter = document.getElementById("filterinputwiki").value
     window.location.replace("/search?filter="+filter+"&setting=wiki");
 }
-function addone(label) {
+function addone(label) {       //FULL RESPONSIVE, no refresh needed
     console.log(label)
     var A = Number(document.getElementById(label).innerHTML)
     var xhr = new XMLHttpRequest();
@@ -228,16 +228,16 @@ function addone(label) {
     xhr.send()
     document.getElementById(label).innerHTML = A+1
 }
-function removeone(label) {
+function removeone(label) {         //FULL RESPONSIVE, no refresh needed
     
     var A = Number(document.getElementById(label).innerHTML)
     var xhr = new XMLHttpRequest();
     xhr.open("POST", 'decrease/'+label, false);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send()
-    document.getElementById(label).innerHTML = Math.max(A-1,0)
+    document.getElementById(label).innerHTML = Math.max(A-1,0)    //AVOID LESS THAN ONE
 }
-function addweapon(label) {
+function addweapon(label) {         
     var price = document.getElementById(label+'__input').value;
     var xhr = new XMLHttpRequest();
     xhr.open("POST", 'add/'+label+'/'+price, false);

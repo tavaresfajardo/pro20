@@ -13,6 +13,7 @@ def home(request):
 
     
     #query to retrieve the 9 guns with the most stock in the store with their correspondent image
+    
     query = """         
         PREFIX prop: <http://www.wikidata.org/wiki/Property/>
         PREFIX entity: <http://www.wikidata.org/entity/>
@@ -58,17 +59,6 @@ def home(request):
         'types': types_of_weapons
     }
     return render(request, 'index.html', tparams)
-
-
-def weapontype(request):
-    rg = request.GET
-    print('rg',rg)
-    type = rg['type']
-    print('type',type)
-    tparams = {
-        
-    }
-    return render(request, 'weapontype.html', tparams)
 
 
 def search(request):
