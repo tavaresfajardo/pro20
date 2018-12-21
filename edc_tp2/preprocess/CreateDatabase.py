@@ -41,6 +41,9 @@ while len(set(dataset))<50:
        print(len(set(dataset)),len(dataset))
 
 newR = [(i,random.randint(1,20),random.randint(16,40)) for i in random.sample(R, 50)]
+
+#generate random dataset, price is multiple of 50   ->  (entity,stock,price//50)
+
 for i in newR:
        newDB +=  [(i[0]['name'],wikiurl_prop+'P2561>', i[0]['nameLabel'])]
        newDB +=  [(i[0]['name'],wikiurl_prop+'P1114>',i[1])]
